@@ -1,124 +1,175 @@
 --[[
-    THEME LIBRARY
-    Tong cong: 427 themes
+    THEME LIBRARY  --  500 themes
 
-    Cach dung:  Themes["<Key>"]   vi du: Themes.Cyan / Themes.NeonBlue
+    ============ MAU CO BAN ============
+    -- DO / RED
+       Red             , BrightRed       , DarkRed         , Scarlet
+       Maroon          , Tomato
+    -- CAM / ORANGE
+       Orange          , BrightOrange    , DarkOrange      , Tangerine
+       Apricot
+    -- VANG / YELLOW
+       Yellow          , BrightYellow    , DarkYellow      , Lemon
+       Mustard         , Sand
+    -- XANH LA / GREEN
+       Green           , BrightGreen     , DarkGreen       , NeonGreen
+       Grass           , Spring          , Avocado
+    -- XANH DUONG / BLUE
+       Blue            , DarkBlue        , RoyalBlue       , BabyBlue
+       SteelBlue       , Periwinkle
+    -- TIM / PURPLE
+       Purpl           , BrightPurple    , DarkPurple      , NeonPurple
+       Lilac           , Eggplant
+    -- HONG / PINK
+       Pink            , HotPink         , BabyPink        , DeepPink
+       Watermelon
+    -- NAU / BROWN
+       Brown           , DarkBrown       , Tan             , Mocha
+       Walnut
+    -- XAM - TRANG - DEN
+       Gray            , LightGray       , DarkGray        , Slate
+       Charcoal        , White           , Snow            , Ivory
+       Black           , Graphite
+    -- MAU KHAC
+       Turq            , Sea             , Marine          , Emeral
+       Chartreuse      , Vermilion       , Burgundy        , Sepia
+       Khaki           , Beige           , Cream           , Pearl
+       Platinum        , Titanium        , Rainbow         , Pastel
+       Monochrome
 
-    ===== CYAN / XANH DUONG SANG =====
-    Cyan            , CyanGlow        , ElectricCyan    , NeonCyan
-    IceCyan         , DeepCyan        , CyanBlue        , BrightBlue
-    SkyBlue         , ElectricBlue    , NeonBlue        , LaserBlue
-    AquaBlue        , Turquoise       , Cerulean        , CyberCyan
-    HoloCyan        , CyanPunch       , ArcticBlue      , BlueLagoon
+    ============ CYAN / XANH DUONG SANG ============
+       Cyan            , CyanGlow        , ElectricCyan    , NeonCyan
+       IceCyan         , DeepCyan        , CyanBlue        , BrightBlue
+       SkyBlue         , ElectricBlue    , NeonBlue        , LaserBlue
+       AquaBlue        , Turquoise       , Cerulean        , CyberCyan
+       HoloCyan        , CyanPunch       , ArcticBlue      , BlueLagoon
 
-    ===== TAT CA THEMES (theo thu tu trong file) =====
+    ============ TAT CA 500 THEMES (thu tu trong file) ============
     Purple                , Crimson               , Ocean                 , Emerald
     Sunset                , Cyan                  , CyanGlow              , ElectricCyan
     NeonCyan              , IceCyan               , DeepCyan              , CyanBlue
     BrightBlue            , SkyBlue               , ElectricBlue          , NeonBlue
     LaserBlue             , AquaBlue              , Turquoise             , Cerulean
     CyberCyan             , HoloCyan              , CyanPunch             , ArcticBlue
-    BlueLagoon            , Amethyst              , Rose                  , Aqua
-    Lime                  , Amber                 , Sapphire              , Ruby
-    Jade                  , Coral                 , Indigo                , Teal
-    Magenta               , Cyber                 , Neon                  , Midnight
-    Blood                 , Frost                 , Toxic                 , Cotton
-    Galaxy                , Ember                 , Mint                  , Lavender
-    Peach                 , Steel                 , Copper                , Gold
-    Silver                , Bronze                , Obsidian              , Volcano
-    Arctic                , Forest                , Desert                , Tropic
-    Vapor                 , Plasma                , Radiant               , Cosmic
-    Nebula                , Quantum               , Matrix                , Cherry
-    Grape                 , Melon                 , Kiwi                  , Mango
-    Berry                 , Candy                 , Bubblegum             , Orchid
-    Violet                , Azure                 , Cobalt                , Denim
-    Navy                  , Sky                   , Seafoam               , Pine
-    Olive                 , Moss                  , Fern                  , Basil
-    Wheat                 , Honey                 , Caramel               , Chocolate
-    Coffee                , Rust                  , Brick                 , Wine
-    Plum                  , Mauve                 , Blush                 , Salmon
-    Flamingo              , Fuchsia               , Punch                 , Solar
-    Lunar                 , Eclipse               , Aurora                , Nova
-    Comet                 , Pulsar                , Void                  , Abyss
-    Storm                 , Thunder               , Blaze                 , Inferno
-    Glacier               , Tundra                , Sakura                , Bamboo
-    Koi                   , Dragon                , Phoenix               , Venom
-    Ghost                 , NeoPurple             , BrightCrimson         , ShadowOcean
-    CrystalEmerald        , NoirSunset            , FadedRose             , VividAqua
-    ChromeLime            , PixelAmber            , DriftSapphire         , EchoJade
-    WildCoral             , RoyalIndigo           , IronTeal              , ZenMagenta
-    HaloNeon              , OnyxFrost             , LumenToxic            , PyroEmber
-    CryoMint              , AstroLavender         , PrimePeach            , MysticSteel
-    RetroCopper           , LucidGold             , DarkBronze            , HyperVolcano
-    SoftForest            , DeepDesert            , UltraTropic           , NeoPlasma
-    BrightCosmic          , ShadowNebula          , CrystalMatrix         , NoirCherry
-    FadedGrape            , VividMango            , ChromeBerry           , PixelCandy
-    DriftOrchid           , EchoViolet            , WildAzure             , RoyalCobalt
-    IronNavy              , ZenSky                , HaloSeafoam           , OnyxPine
-    LumenOlive            , PyroMoss              , CryoHoney             , AstroCaramel
-    PrimeRust             , MysticWine            , RetroPlum             , LucidBlush
-    DarkSalmon            , HyperFuchsia          , SoftSolar             , DeepLunar
-    UltraAurora           , NeoNova               , BrightComet           , ShadowStorm
-    CrystalBlaze          , NoirInferno           , FadedGlacier          , VividTundra
-    ChromeSakura          , PixelBamboo           , DriftDragon           , EchoPhoenix
-    WildVenom             , RoyalGhost            , IronPrism             , ZenQuantum
-    HaloVapor             , OnyxGalaxy            , LumenMidnight         , PyroArctic
-    CryoAbyss             , UltraPurple           , NeoCrimson            , BrightOcean
-    ShadowEmerald         , CrystalSunset         , NoirRose              , FadedAqua
-    VividLime             , ChromeAmber           , PixelSapphire         , DriftJade
-    EchoCoral             , WildIndigo            , RoyalTeal             , IronMagenta
-    ZenNeon               , HaloFrost             , OnyxToxic             , LumenEmber
-    PyroMint              , CryoLavender          , AstroPeach            , PrimeSteel
-    MysticCopper          , RetroGold             , LucidBronze           , DarkVolcano
-    HyperForest           , SoftDesert            , DeepTropic            , UltraPlasma
-    NeoCosmic             , BrightNebula          , ShadowMatrix          , CrystalCherry
-    NoirGrape             , FadedMango            , VividBerry            , ChromeCandy
-    PixelOrchid           , DriftViolet           , EchoAzure             , WildCobalt
-    RoyalNavy             , IronSky               , ZenSeafoam            , HaloPine
-    OnyxOlive             , LumenMoss             , PyroHoney             , CryoCaramel
-    AstroRust             , PrimeWine             , MysticPlum            , RetroBlush
-    LucidSalmon           , DarkFuchsia           , HyperSolar            , SoftLunar
-    DeepAurora            , UltraNova             , NeoComet              , BrightStorm
-    ShadowBlaze           , CrystalInferno        , NoirGlacier           , FadedTundra
-    VividSakura           , ChromeBamboo          , PixelDragon           , DriftPhoenix
-    EchoVenom             , WildGhost             , RoyalPrism            , IronQuantum
-    ZenVapor              , HaloGalaxy            , OnyxMidnight          , LumenArctic
-    PyroAbyss             , DeepPurple            , UltraCrimson          , NeoOcean
-    BrightEmerald         , ShadowSunset          , CrystalRose           , NoirAqua
-    FadedLime             , VividAmber            , ChromeSapphire        , PixelJade
-    DriftCoral            , EchoIndigo            , WildTeal              , RoyalMagenta
-    IronNeon              , ZenFrost              , HaloToxic             , OnyxEmber
-    LumenMint             , PyroLavender          , CryoPeach             , AstroSteel
-    PrimeCopper           , MysticGold            , RetroBronze           , LucidVolcano
-    DarkForest            , HyperDesert           , SoftTropic            , DeepPlasma
-    UltraCosmic           , NeoNebula             , BrightMatrix          , ShadowCherry
-    CrystalGrape          , NoirMango             , FadedBerry            , VividCandy
-    ChromeOrchid          , PixelViolet           , DriftAzure            , EchoCobalt
-    WildNavy              , RoyalSky              , IronSeafoam           , ZenPine
-    HaloOlive             , OnyxMoss              , LumenHoney            , PyroCaramel
-    CryoRust              , AstroWine             , PrimePlum             , MysticBlush
-    RetroSalmon           , LucidFuchsia          , DarkSolar             , HyperLunar
-    SoftAurora            , DeepNova              , UltraComet            , NeoStorm
-    BrightBlaze           , ShadowInferno         , CrystalGlacier        , NoirTundra
-    FadedSakura           , VividBamboo           , ChromeDragon          , PixelPhoenix
-    DriftVenom            , EchoGhost             , WildPrism             , RoyalQuantum
-    IronVapor             , ZenGalaxy             , HaloMidnight          , OnyxArctic
-    LumenAbyss            , SoftPurple            , DeepCrimson           , UltraOcean
-    NeoEmerald            , BrightSunset          , ShadowRose            , CrystalAqua
-    NoirLime              , FadedAmber            , VividSapphire         , ChromeJade
-    PixelCoral            , DriftIndigo           , EchoTeal              , WildMagenta
-    RoyalNeon             , IronFrost             , ZenToxic              , HaloEmber
-    OnyxMint              , LumenLavender         , PyroPeach             , CryoSteel
-    AstroCopper           , PrimeGold             , MysticBronze          , RetroVolcano
-    LucidForest           , DarkDesert            , HyperTropic           , SoftPlasma
-    DeepCosmic            , UltraNebula           , NeoMatrix             , BrightCherry
-    ShadowGrape           , CrystalMango          , NoirBerry             , FadedCandy
-    VividOrchid           , ChromeViolet          , PixelAzure            , DriftCobalt
-    EchoNavy              , WildSky               , RoyalSeafoam          , IronPine
-    ZenOlive              , HaloMoss              , OnyxHoney             , LumenCaramel
-    PyroRust              , CryoWine              , AstroPlum             , PrimeBlush
-    MysticSalmon          , RetroFuchsia          , LucidSolar            , DarkLunar
-    HyperAurora           , SoftNova              , DeepComet
+    BlueLagoon            , Red                   , BrightRed             , DarkRed
+    Scarlet               , Maroon                , Tomato                , Orange
+    BrightOrange          , DarkOrange            , Tangerine             , Apricot
+    Yellow                , BrightYellow          , DarkYellow            , Lemon
+    Mustard               , Sand                  , Green                 , BrightGreen
+    DarkGreen             , NeonGreen             , Grass                 , Spring
+    Avocado               , Blue                  , DarkBlue              , RoyalBlue
+    BabyBlue              , SteelBlue             , Periwinkle            , Purpl
+    BrightPurple          , DarkPurple            , NeonPurple            , Lilac
+    Eggplant              , Pink                  , HotPink               , BabyPink
+    DeepPink              , Watermelon            , Brown                 , DarkBrown
+    Tan                   , Mocha                 , Walnut                , Gray
+    LightGray             , DarkGray              , Slate                 , Charcoal
+    White                 , Snow                  , Ivory                 , Black
+    Graphite              , Turq                  , Sea                   , Marine
+    Emeral                , Chartreuse            , Vermilion             , Burgundy
+    Sepia                 , Khaki                 , Beige                 , Cream
+    Pearl                 , Platinum              , Titanium              , Rainbow
+    Pastel                , Monochrome            , Amethyst              , Rose
+    Aqua                  , Lime                  , Amber                 , Sapphire
+    Ruby                  , Jade                  , Coral                 , Indigo
+    Teal                  , Magenta               , Cyber                 , Neon
+    Midnight              , Blood                 , Frost                 , Toxic
+    Cotton                , Galaxy                , Ember                 , Mint
+    Lavender              , Peach                 , Steel                 , Copper
+    Gold                  , Silver                , Bronze                , Obsidian
+    Volcano               , Arctic                , Forest                , Desert
+    Tropic                , Vapor                 , Plasma                , Radiant
+    Cosmic                , Nebula                , Quantum               , Matrix
+    Cherry                , Grape                 , Melon                 , Kiwi
+    Mango                 , Berry                 , Candy                 , Bubblegum
+    Orchid                , Violet                , Azure                 , Cobalt
+    Denim                 , Navy                  , Sky                   , Seafoam
+    Pine                  , Olive                 , Moss                  , Fern
+    Basil                 , Wheat                 , Honey                 , Caramel
+    Chocolate             , Coffee                , Rust                  , Brick
+    Wine                  , Plum                  , Mauve                 , Blush
+    Salmon                , Flamingo              , Fuchsia               , Punch
+    Solar                 , Lunar                 , Eclipse               , Aurora
+    Nova                  , Comet                 , Pulsar                , Void
+    Abyss                 , Storm                 , Thunder               , Blaze
+    Inferno               , Glacier               , Tundra                , Sakura
+    Bamboo                , Koi                   , Dragon                , Phoenix
+    Venom                 , Ghost                 , NeoPurple             , BrightCrimson
+    ShadowOcean           , CrystalEmerald        , NoirSunset            , FadedRose
+    VividAqua             , ChromeLime            , PixelAmber            , DriftSapphire
+    EchoJade              , WildCoral             , RoyalIndigo           , IronTeal
+    ZenMagenta            , HaloNeon              , OnyxFrost             , LumenToxic
+    PyroEmber             , CryoMint              , AstroLavender         , PrimePeach
+    MysticSteel           , RetroCopper           , LucidGold             , DarkBronze
+    HyperVolcano          , SoftForest            , DeepDesert            , UltraTropic
+    NeoPlasma             , BrightCosmic          , ShadowNebula          , CrystalMatrix
+    NoirCherry            , FadedGrape            , VividMango            , ChromeBerry
+    PixelCandy            , DriftOrchid           , EchoViolet            , WildAzure
+    RoyalCobalt           , IronNavy              , ZenSky                , HaloSeafoam
+    OnyxPine              , LumenOlive            , PyroMoss              , CryoHoney
+    AstroCaramel          , PrimeRust             , MysticWine            , RetroPlum
+    LucidBlush            , DarkSalmon            , HyperFuchsia          , SoftSolar
+    DeepLunar             , UltraAurora           , NeoNova               , BrightComet
+    ShadowStorm           , CrystalBlaze          , NoirInferno           , FadedGlacier
+    VividTundra           , ChromeSakura          , PixelBamboo           , DriftDragon
+    EchoPhoenix           , WildVenom             , RoyalGhost            , IronPrism
+    ZenQuantum            , HaloVapor             , OnyxGalaxy            , LumenMidnight
+    PyroArctic            , CryoAbyss             , UltraPurple           , NeoCrimson
+    BrightOcean           , ShadowEmerald         , CrystalSunset         , NoirRose
+    FadedAqua             , VividLime             , ChromeAmber           , PixelSapphire
+    DriftJade             , EchoCoral             , WildIndigo            , RoyalTeal
+    IronMagenta           , ZenNeon               , HaloFrost             , OnyxToxic
+    LumenEmber            , PyroMint              , CryoLavender          , AstroPeach
+    PrimeSteel            , MysticCopper          , RetroGold             , LucidBronze
+    DarkVolcano           , HyperForest           , SoftDesert            , DeepTropic
+    UltraPlasma           , NeoCosmic             , BrightNebula          , ShadowMatrix
+    CrystalCherry         , NoirGrape             , FadedMango            , VividBerry
+    ChromeCandy           , PixelOrchid           , DriftViolet           , EchoAzure
+    WildCobalt            , RoyalNavy             , IronSky               , ZenSeafoam
+    HaloPine              , OnyxOlive             , LumenMoss             , PyroHoney
+    CryoCaramel           , AstroRust             , PrimeWine             , MysticPlum
+    RetroBlush            , LucidSalmon           , DarkFuchsia           , HyperSolar
+    SoftLunar             , DeepAurora            , UltraNova             , NeoComet
+    BrightStorm           , ShadowBlaze           , CrystalInferno        , NoirGlacier
+    FadedTundra           , VividSakura           , ChromeBamboo          , PixelDragon
+    DriftPhoenix          , EchoVenom             , WildGhost             , RoyalPrism
+    IronQuantum           , ZenVapor              , HaloGalaxy            , OnyxMidnight
+    LumenArctic           , PyroAbyss             , DeepPurple            , UltraCrimson
+    NeoOcean              , BrightEmerald         , ShadowSunset          , CrystalRose
+    NoirAqua              , FadedLime             , VividAmber            , ChromeSapphire
+    PixelJade             , DriftCoral            , EchoIndigo            , WildTeal
+    RoyalMagenta          , IronNeon              , ZenFrost              , HaloToxic
+    OnyxEmber             , LumenMint             , PyroLavender          , CryoPeach
+    AstroSteel            , PrimeCopper           , MysticGold            , RetroBronze
+    LucidVolcano          , DarkForest            , HyperDesert           , SoftTropic
+    DeepPlasma            , UltraCosmic           , NeoNebula             , BrightMatrix
+    ShadowCherry          , CrystalGrape          , NoirMango             , FadedBerry
+    VividCandy            , ChromeOrchid          , PixelViolet           , DriftAzure
+    EchoCobalt            , WildNavy              , RoyalSky              , IronSeafoam
+    ZenPine               , HaloOlive             , OnyxMoss              , LumenHoney
+    PyroCaramel           , CryoRust              , AstroWine             , PrimePlum
+    MysticBlush           , RetroSalmon           , LucidFuchsia          , DarkSolar
+    HyperLunar            , SoftAurora            , DeepNova              , UltraComet
+    NeoStorm              , BrightBlaze           , ShadowInferno         , CrystalGlacier
+    NoirTundra            , FadedSakura           , VividBamboo           , ChromeDragon
+    PixelPhoenix          , DriftVenom            , EchoGhost             , WildPrism
+    RoyalQuantum          , IronVapor             , ZenGalaxy             , HaloMidnight
+    OnyxArctic            , LumenAbyss            , SoftPurple            , DeepCrimson
+    UltraOcean            , NeoEmerald            , BrightSunset          , ShadowRose
+    CrystalAqua           , NoirLime              , FadedAmber            , VividSapphire
+    ChromeJade            , PixelCoral            , DriftIndigo           , EchoTeal
+    WildMagenta           , RoyalNeon             , IronFrost             , ZenToxic
+    HaloEmber             , OnyxMint              , LumenLavender         , PyroPeach
+    CryoSteel             , AstroCopper           , PrimeGold             , MysticBronze
+    RetroVolcano          , LucidForest           , DarkDesert            , HyperTropic
+    SoftPlasma            , DeepCosmic            , UltraNebula           , NeoMatrix
+    BrightCherry          , ShadowGrape           , CrystalMango          , NoirBerry
+    FadedCandy            , VividOrchid           , ChromeViolet          , PixelAzure
+    DriftCobalt           , EchoNavy              , WildSky               , RoyalSeafoam
+    IronPine              , ZenOlive              , HaloMoss              , OnyxHoney
+    LumenCaramel          , PyroRust              , CryoWine              , AstroPlum
+    PrimeBlush            , MysticSalmon          , RetroFuchsia          , LucidSolar
+    DarkLunar             , HyperAurora           , SoftNova              , DeepComet
 ]]
 return {
     Themes = {
@@ -696,6 +747,1685 @@ return {
             HeaderBtn = Color3.fromRGB(92, 203, 244),
             DisplayName = "Blue Lagoon",
             PreviewColors = {Color3.fromRGB(72, 189, 255), Color3.fromRGB(56, 171, 198), Color3.fromRGB(24, 106, 109)}
+        },
+        Red = {
+            Body = Color3.fromRGB(13, 9, 9),
+            Primary = Color3.fromRGB(8, 5, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(104, 11, 14)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(138, 23, 22)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(172, 42, 36)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(205, 67, 53)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(239, 96, 73))
+            },
+            TextColor = Color3.fromRGB(255, 239, 239),
+            SubTextColor = Color3.fromRGB(239, 194, 196),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(247, 59, 40)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(156, 9, 11))
+            },
+            Accent = Color3.fromRGB(255, 105, 94),
+            AccentDark = Color3.fromRGB(192, 43, 39),
+            AccentLight = Color3.fromRGB(255, 176, 169),
+            HeaderBtn = Color3.fromRGB(237, 75, 65),
+            DisplayName = "Red",
+            PreviewColors = {Color3.fromRGB(247, 59, 40), Color3.fromRGB(192, 43, 39), Color3.fromRGB(104, 11, 14)}
+        },
+        BrightRed = {
+            Body = Color3.fromRGB(12, 8, 8),
+            Primary = Color3.fromRGB(8, 5, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(116, 11, 8)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(154, 27, 18)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(192, 48, 33)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(230, 75, 51)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 101, 70))
+            },
+            TextColor = Color3.fromRGB(255, 239, 238),
+            SubTextColor = Color3.fromRGB(255, 206, 205),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 61, 31)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(174, 10, 2))
+            },
+            Accent = Color3.fromRGB(255, 106, 87),
+            AccentDark = Color3.fromRGB(215, 50, 35),
+            AccentLight = Color3.fromRGB(255, 177, 165),
+            HeaderBtn = Color3.fromRGB(255, 82, 61),
+            DisplayName = "Bright Red",
+            PreviewColors = {Color3.fromRGB(255, 61, 31), Color3.fromRGB(215, 50, 35), Color3.fromRGB(116, 11, 8)}
+        },
+        DarkRed = {
+            Body = Color3.fromRGB(10, 7, 7),
+            Primary = Color3.fromRGB(6, 4, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(69, 7, 12)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(92, 14, 16)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(114, 25, 24)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(137, 41, 35)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 60, 49))
+            },
+            TextColor = Color3.fromRGB(255, 239, 240),
+            SubTextColor = Color3.fromRGB(160, 129, 131),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(165, 34, 26)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(104, 6, 11))
+            },
+            Accent = Color3.fromRGB(172, 67, 64),
+            AccentDark = Color3.fromRGB(128, 26, 27),
+            AccentLight = Color3.fromRGB(173, 118, 115),
+            HeaderBtn = Color3.fromRGB(158, 46, 43),
+            DisplayName = "Dark Red",
+            PreviewColors = {Color3.fromRGB(165, 34, 26), Color3.fromRGB(128, 26, 27), Color3.fromRGB(69, 7, 12)}
+        },
+        Scarlet = {
+            Body = Color3.fromRGB(12, 9, 8),
+            Primary = Color3.fromRGB(8, 5, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(107, 19, 9)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(142, 37, 19)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(177, 61, 33)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(212, 90, 50)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(246, 123, 71))
+            },
+            TextColor = Color3.fromRGB(255, 240, 238),
+            SubTextColor = Color3.fromRGB(246, 203, 198),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(254, 90, 35)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(161, 23, 4))
+            },
+            Accent = Color3.fromRGB(255, 126, 90),
+            AccentDark = Color3.fromRGB(198, 63, 36),
+            AccentLight = Color3.fromRGB(255, 188, 167),
+            HeaderBtn = Color3.fromRGB(244, 100, 62),
+            DisplayName = "Scarlet",
+            PreviewColors = {Color3.fromRGB(254, 90, 35), Color3.fromRGB(198, 63, 36), Color3.fromRGB(107, 19, 9)}
+        },
+        Maroon = {
+            Body = Color3.fromRGB(9, 7, 7),
+            Primary = Color3.fromRGB(6, 4, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(61, 12, 20)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(81, 19, 26)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(101, 29, 32)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(121, 40, 40)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(141, 58, 53))
+            },
+            TextColor = Color3.fromRGB(255, 240, 243),
+            SubTextColor = Color3.fromRGB(141, 117, 121),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(145, 36, 35)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(92, 13, 25))
+            },
+            Accent = Color3.fromRGB(151, 65, 67),
+            AccentDark = Color3.fromRGB(113, 31, 38),
+            AccentLight = Color3.fromRGB(153, 106, 107),
+            HeaderBtn = Color3.fromRGB(139, 48, 51),
+            DisplayName = "Maroon",
+            PreviewColors = {Color3.fromRGB(145, 36, 35), Color3.fromRGB(113, 31, 38), Color3.fromRGB(61, 12, 20)}
+        },
+        Tomato = {
+            Body = Color3.fromRGB(13, 9, 9),
+            Primary = Color3.fromRGB(8, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(110, 31, 17)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(146, 52, 29)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(182, 79, 45)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(218, 110, 64)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(253, 145, 86))
+            },
+            TextColor = Color3.fromRGB(255, 242, 240),
+            SubTextColor = Color3.fromRGB(253, 215, 208),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 112, 51)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(165, 42, 17))
+            },
+            Accent = Color3.fromRGB(255, 143, 102),
+            AccentDark = Color3.fromRGB(204, 83, 49),
+            AccentLight = Color3.fromRGB(255, 197, 173),
+            HeaderBtn = Color3.fromRGB(251, 123, 78),
+            DisplayName = "Tomato",
+            PreviewColors = {Color3.fromRGB(255, 112, 51), Color3.fromRGB(204, 83, 49), Color3.fromRGB(110, 31, 17)}
+        },
+        Orange = {
+            Body = Color3.fromRGB(13, 11, 9),
+            Primary = Color3.fromRGB(8, 7, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(108, 57, 12)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(143, 85, 23)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(178, 117, 37)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(214, 153, 55)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(249, 191, 76))
+            },
+            TextColor = Color3.fromRGB(255, 246, 239),
+            SubTextColor = Color3.fromRGB(249, 224, 202),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 173, 41)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(162, 84, 9))
+            },
+            Accent = Color3.fromRGB(255, 189, 94),
+            AccentDark = Color3.fromRGB(200, 126, 40),
+            AccentLight = Color3.fromRGB(255, 221, 169),
+            HeaderBtn = Color3.fromRGB(246, 171, 68),
+            DisplayName = "Orange",
+            PreviewColors = {Color3.fromRGB(255, 173, 41), Color3.fromRGB(200, 126, 40), Color3.fromRGB(108, 57, 12)}
+        },
+        BrightOrange = {
+            Body = Color3.fromRGB(13, 11, 9),
+            Primary = Color3.fromRGB(8, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(118, 63, 8)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(157, 93, 18)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(195, 128, 33)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(234, 165, 52)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 193, 70))
+            },
+            TextColor = Color3.fromRGB(255, 247, 238),
+            SubTextColor = Color3.fromRGB(255, 230, 205),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 171, 31)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(177, 93, 2))
+            },
+            Accent = Color3.fromRGB(255, 188, 87),
+            AccentDark = Color3.fromRGB(219, 138, 36),
+            AccentLight = Color3.fromRGB(255, 221, 165),
+            HeaderBtn = Color3.fromRGB(255, 176, 61),
+            DisplayName = "Bright Orange",
+            PreviewColors = {Color3.fromRGB(255, 171, 31), Color3.fromRGB(219, 138, 36), Color3.fromRGB(118, 63, 8)}
+        },
+        DarkOrange = {
+            Body = Color3.fromRGB(10, 8, 7),
+            Primary = Color3.fromRGB(7, 5, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(73, 34, 8)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(97, 52, 15)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(121, 73, 25)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(145, 97, 37)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(169, 122, 52))
+            },
+            TextColor = Color3.fromRGB(255, 245, 239),
+            SubTextColor = Color3.fromRGB(169, 150, 137),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(174, 108, 28)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(110, 50, 6))
+            },
+            Accent = Color3.fromRGB(182, 127, 67),
+            AccentDark = Color3.fromRGB(136, 78, 27),
+            AccentLight = Color3.fromRGB(184, 155, 122),
+            HeaderBtn = Color3.fromRGB(167, 108, 46),
+            DisplayName = "Dark Orange",
+            PreviewColors = {Color3.fromRGB(174, 108, 28), Color3.fromRGB(136, 78, 27), Color3.fromRGB(73, 34, 8)}
+        },
+        Tangerine = {
+            Body = Color3.fromRGB(13, 10, 9),
+            Primary = Color3.fromRGB(8, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(112, 48, 11)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(149, 77, 22)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(185, 111, 37)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(222, 150, 55)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 190, 77))
+            },
+            TextColor = Color3.fromRGB(255, 245, 239),
+            SubTextColor = Color3.fromRGB(255, 224, 206),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 161, 39)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(168, 71, 8))
+            },
+            Accent = Color3.fromRGB(255, 178, 93),
+            AccentDark = Color3.fromRGB(208, 117, 40),
+            AccentLight = Color3.fromRGB(255, 216, 169),
+            HeaderBtn = Color3.fromRGB(255, 164, 68),
+            DisplayName = "Tangerine",
+            PreviewColors = {Color3.fromRGB(255, 161, 39), Color3.fromRGB(208, 117, 40), Color3.fromRGB(112, 48, 11)}
+        },
+        Apricot = {
+            Body = Color3.fromRGB(15, 13, 12),
+            Primary = Color3.fromRGB(9, 8, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(116, 78, 49)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(154, 111, 70)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(192, 148, 93)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(230, 186, 119)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 217, 141))
+            },
+            TextColor = Color3.fromRGB(255, 249, 245),
+            SubTextColor = Color3.fromRGB(255, 237, 224),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 201, 116)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(174, 116, 68))
+            },
+            Accent = Color3.fromRGB(255, 211, 151),
+            AccentDark = Color3.fromRGB(215, 161, 104),
+            AccentLight = Color3.fromRGB(255, 233, 200),
+            HeaderBtn = Color3.fromRGB(255, 203, 135),
+            DisplayName = "Apricot",
+            PreviewColors = {Color3.fromRGB(255, 201, 116), Color3.fromRGB(215, 161, 104), Color3.fromRGB(116, 78, 49)}
+        },
+        Yellow = {
+            Body = Color3.fromRGB(14, 13, 10),
+            Primary = Color3.fromRGB(9, 8, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(112, 99, 15)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(149, 138, 27)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(185, 178, 43)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(222, 220, 62)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(249, 255, 83))
+            },
+            TextColor = Color3.fromRGB(255, 253, 239),
+            SubTextColor = Color3.fromRGB(255, 249, 208),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 253, 47)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(168, 150, 14))
+            },
+            Accent = Color3.fromRGB(255, 250, 99),
+            AccentDark = Color3.fromRGB(208, 196, 47),
+            AccentLight = Color3.fromRGB(255, 254, 172),
+            HeaderBtn = Color3.fromRGB(255, 248, 76),
+            DisplayName = "Yellow",
+            PreviewColors = {Color3.fromRGB(255, 253, 47), Color3.fromRGB(208, 196, 47), Color3.fromRGB(112, 99, 15)}
+        },
+        BrightYellow = {
+            Body = Color3.fromRGB(13, 13, 9),
+            Primary = Color3.fromRGB(8, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(122, 111, 13)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(162, 153, 26)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(202, 197, 42)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(242, 242, 62)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(249, 255, 78))
+            },
+            TextColor = Color3.fromRGB(255, 253, 239),
+            SubTextColor = Color3.fromRGB(255, 250, 207),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 41)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(184, 169, 10))
+            },
+            Accent = Color3.fromRGB(255, 252, 94),
+            AccentDark = Color3.fromRGB(226, 217, 46),
+            AccentLight = Color3.fromRGB(255, 254, 169),
+            HeaderBtn = Color3.fromRGB(255, 250, 70),
+            DisplayName = "Bright Yellow",
+            PreviewColors = {Color3.fromRGB(255, 255, 41), Color3.fromRGB(226, 217, 46), Color3.fromRGB(122, 111, 13)}
+        },
+        DarkYellow = {
+            Body = Color3.fromRGB(10, 10, 7),
+            Primary = Color3.fromRGB(7, 6, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(75, 63, 11)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(100, 88, 20)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(125, 115, 31)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(149, 144, 44)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(174, 174, 59))
+            },
+            TextColor = Color3.fromRGB(255, 252, 240),
+            SubTextColor = Color3.fromRGB(174, 167, 142),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(179, 172, 36)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(113, 95, 11))
+            },
+            Accent = Color3.fromRGB(187, 178, 75),
+            AccentDark = Color3.fromRGB(140, 126, 34),
+            AccentLight = Color3.fromRGB(189, 185, 128),
+            HeaderBtn = Color3.fromRGB(172, 161, 53),
+            DisplayName = "Dark Yellow",
+            PreviewColors = {Color3.fromRGB(179, 172, 36), Color3.fromRGB(140, 126, 34), Color3.fromRGB(75, 63, 11)}
+        },
+        Lemon = {
+            Body = Color3.fromRGB(14, 14, 10),
+            Primary = Color3.fromRGB(9, 8, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(118, 112, 23)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(157, 154, 37)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(193, 195, 55)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(225, 234, 77)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(239, 255, 95))
+            },
+            TextColor = Color3.fromRGB(255, 254, 240),
+            SubTextColor = Color3.fromRGB(255, 252, 211),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(244, 255, 61)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(177, 170, 26))
+            },
+            Accent = Color3.fromRGB(250, 255, 110),
+            AccentDark = Color3.fromRGB(219, 218, 61),
+            AccentLight = Color3.fromRGB(251, 255, 177),
+            HeaderBtn = Color3.fromRGB(251, 255, 88),
+            DisplayName = "Lemon",
+            PreviewColors = {Color3.fromRGB(244, 255, 61), Color3.fromRGB(219, 218, 61), Color3.fromRGB(118, 112, 23)}
+        },
+        Mustard = {
+            Body = Color3.fromRGB(11, 10, 8),
+            Primary = Color3.fromRGB(7, 7, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(88, 70, 13)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(116, 100, 23)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(145, 132, 35)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(173, 166, 51)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(202, 202, 69))
+            },
+            TextColor = Color3.fromRGB(255, 251, 240),
+            SubTextColor = Color3.fromRGB(202, 193, 165),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(208, 199, 42)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(132, 107, 13))
+            },
+            Accent = Color3.fromRGB(217, 205, 87),
+            AccentDark = Color3.fromRGB(162, 144, 39),
+            AccentLight = Color3.fromRGB(219, 214, 149),
+            HeaderBtn = Color3.fromRGB(200, 185, 62),
+            DisplayName = "Mustard",
+            PreviewColors = {Color3.fromRGB(208, 199, 42), Color3.fromRGB(162, 144, 39), Color3.fromRGB(88, 70, 13)}
+        },
+        Sand = {
+            Body = Color3.fromRGB(15, 14, 12),
+            Primary = Color3.fromRGB(9, 9, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(112, 96, 60)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(149, 133, 83)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(185, 172, 108)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(222, 213, 135)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 252, 162))
+            },
+            TextColor = Color3.fromRGB(255, 252, 247),
+            SubTextColor = Color3.fromRGB(255, 247, 230),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 244, 143)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(168, 146, 85))
+            },
+            Accent = Color3.fromRGB(255, 243, 171),
+            AccentDark = Color3.fromRGB(208, 190, 121),
+            AccentLight = Color3.fromRGB(255, 250, 210),
+            HeaderBtn = Color3.fromRGB(255, 240, 158),
+            DisplayName = "Sand",
+            PreviewColors = {Color3.fromRGB(255, 244, 143), Color3.fromRGB(208, 190, 121), Color3.fromRGB(112, 96, 60)}
+        },
+        Green = {
+            Body = Color3.fromRGB(8, 12, 9),
+            Primary = Color3.fromRGB(5, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(14, 102, 28)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(25, 135, 49)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(39, 168, 75)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(56, 201, 106)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(77, 235, 140))
+            },
+            TextColor = Color3.fromRGB(239, 255, 242),
+            SubTextColor = Color3.fromRGB(192, 235, 199),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 242, 112)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(13, 153, 39))
+            },
+            Accent = Color3.fromRGB(98, 252, 145),
+            AccentDark = Color3.fromRGB(42, 189, 79),
+            AccentLight = Color3.fromRGB(172, 255, 199),
+            HeaderBtn = Color3.fromRGB(69, 232, 117),
+            DisplayName = "Green",
+            PreviewColors = {Color3.fromRGB(45, 242, 112), Color3.fromRGB(42, 189, 79), Color3.fromRGB(14, 102, 28)}
+        },
+        BrightGreen = {
+            Body = Color3.fromRGB(8, 12, 8),
+            Primary = Color3.fromRGB(5, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 118, 10)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(21, 157, 28)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(36, 195, 52)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(55, 234, 82)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(73, 255, 110))
+            },
+            TextColor = Color3.fromRGB(238, 255, 238),
+            SubTextColor = Color3.fromRGB(205, 255, 205),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(35, 255, 68)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(5, 177, 8))
+            },
+            Accent = Color3.fromRGB(90, 255, 110),
+            AccentDark = Color3.fromRGB(39, 219, 52),
+            AccentLight = Color3.fromRGB(167, 255, 179),
+            HeaderBtn = Color3.fromRGB(65, 255, 86),
+            DisplayName = "Bright Green",
+            PreviewColors = {Color3.fromRGB(35, 255, 68), Color3.fromRGB(39, 219, 52), Color3.fromRGB(10, 118, 10)}
+        },
+        DarkGreen = {
+            Body = Color3.fromRGB(7, 10, 8),
+            Primary = Color3.fromRGB(4, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(9, 67, 28)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(16, 89, 45)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(26, 111, 64)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(37, 133, 86)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(51, 155, 110))
+            },
+            TextColor = Color3.fromRGB(239, 255, 245),
+            SubTextColor = Color3.fromRGB(126, 155, 136),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(29, 160, 96)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(8, 101, 41))
+            },
+            Accent = Color3.fromRGB(65, 167, 113),
+            AccentDark = Color3.fromRGB(28, 125, 68),
+            AccentLight = Color3.fromRGB(113, 168, 141),
+            HeaderBtn = Color3.fromRGB(45, 153, 95),
+            DisplayName = "Dark Green",
+            PreviewColors = {Color3.fromRGB(29, 160, 96), Color3.fromRGB(28, 125, 68), Color3.fromRGB(9, 67, 28)}
+        },
+        NeonGreen = {
+            Body = Color3.fromRGB(8, 12, 8),
+            Primary = Color3.fromRGB(5, 7, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(18, 120, 3)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(22, 159, 12)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(26, 199, 26)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(44, 238, 57)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(61, 255, 87))
+            },
+            TextColor = Color3.fromRGB(240, 255, 237),
+            SubTextColor = Color3.fromRGB(209, 255, 202),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 255, 36)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(19, 181, 0))
+            },
+            Accent = Color3.fromRGB(79, 255, 84),
+            AccentDark = Color3.fromRGB(36, 223, 28),
+            AccentLight = Color3.fromRGB(161, 255, 166),
+            HeaderBtn = Color3.fromRGB(53, 255, 55),
+            DisplayName = "Neon Green",
+            PreviewColors = {Color3.fromRGB(20, 255, 36), Color3.fromRGB(36, 223, 28), Color3.fromRGB(18, 120, 3)}
+        },
+        Grass = {
+            Body = Color3.fromRGB(10, 12, 9),
+            Primary = Color3.fromRGB(6, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 104, 16)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(57, 138, 27)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(68, 172, 42)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(79, 205, 60)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(92, 239, 81))
+            },
+            TextColor = Color3.fromRGB(245, 255, 240),
+            SubTextColor = Color3.fromRGB(211, 239, 196),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(76, 247, 49)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(59, 156, 16))
+            },
+            Accent = Color3.fromRGB(129, 255, 102),
+            AccentDark = Color3.fromRGB(81, 192, 46),
+            AccentLight = Color3.fromRGB(185, 255, 173),
+            HeaderBtn = Color3.fromRGB(104, 237, 73),
+            DisplayName = "Grass",
+            PreviewColors = {Color3.fromRGB(76, 247, 49), Color3.fromRGB(81, 192, 46), Color3.fromRGB(45, 104, 16)}
+        },
+        Spring = {
+            Body = Color3.fromRGB(9, 13, 11),
+            Primary = Color3.fromRGB(5, 8, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(22, 112, 59)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(35, 149, 91)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(52, 185, 128)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(73, 222, 168)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(95, 255, 210))
+            },
+            TextColor = Color3.fromRGB(240, 255, 247),
+            SubTextColor = Color3.fromRGB(211, 255, 230),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(61, 255, 186)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(24, 168, 89))
+            },
+            Accent = Color3.fromRGB(110, 255, 196),
+            AccentDark = Color3.fromRGB(58, 208, 136),
+            AccentLight = Color3.fromRGB(177, 255, 226),
+            HeaderBtn = Color3.fromRGB(88, 255, 185),
+            DisplayName = "Spring",
+            PreviewColors = {Color3.fromRGB(61, 255, 186), Color3.fromRGB(58, 208, 136), Color3.fromRGB(22, 112, 59)}
+        },
+        Avocado = {
+            Body = Color3.fromRGB(11, 12, 9),
+            Primary = Color3.fromRGB(7, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(72, 94, 22)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(91, 124, 35)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(109, 155, 50)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(126, 185, 67)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(143, 216, 88))
+            },
+            TextColor = Color3.fromRGB(251, 255, 241),
+            SubTextColor = Color3.fromRGB(205, 216, 181),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(143, 223, 62)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(104, 141, 27))
+            },
+            Accent = Color3.fromRGB(175, 232, 107),
+            AccentDark = Color3.fromRGB(127, 174, 55),
+            AccentLight = Color3.fromRGB(202, 235, 167),
+            HeaderBtn = Color3.fromRGB(154, 213, 81),
+            DisplayName = "Avocado",
+            PreviewColors = {Color3.fromRGB(143, 223, 62), Color3.fromRGB(127, 174, 55), Color3.fromRGB(72, 94, 22)}
+        },
+        Blue = {
+            Body = Color3.fromRGB(8, 10, 12),
+            Primary = Color3.fromRGB(5, 6, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(11, 39, 104)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(22, 51, 138)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(36, 63, 172)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(53, 76, 205)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(73, 90, 239))
+            },
+            TextColor = Color3.fromRGB(239, 244, 255),
+            SubTextColor = Color3.fromRGB(194, 208, 239),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(40, 71, 247)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(9, 50, 156))
+            },
+            Accent = Color3.fromRGB(94, 123, 255),
+            AccentDark = Color3.fromRGB(39, 74, 192),
+            AccentLight = Color3.fromRGB(169, 183, 255),
+            HeaderBtn = Color3.fromRGB(65, 98, 237),
+            DisplayName = "Blue",
+            PreviewColors = {Color3.fromRGB(40, 71, 247), Color3.fromRGB(39, 74, 192), Color3.fromRGB(11, 39, 104)}
+        },
+        DarkBlue = {
+            Body = Color3.fromRGB(6, 7, 9),
+            Primary = Color3.fromRGB(4, 4, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(7, 19, 67)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(14, 25, 89)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(23, 32, 111)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(34, 39, 133)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(48, 48, 155))
+            },
+            TextColor = Color3.fromRGB(239, 242, 255),
+            SubTextColor = Color3.fromRGB(126, 131, 155),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(26, 32, 160)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(6, 23, 101))
+            },
+            Accent = Color3.fromRGB(62, 70, 167),
+            AccentDark = Color3.fromRGB(25, 38, 125),
+            AccentLight = Color3.fromRGB(112, 115, 168),
+            HeaderBtn = Color3.fromRGB(42, 52, 153),
+            DisplayName = "Dark Blue",
+            PreviewColors = {Color3.fromRGB(26, 32, 160), Color3.fromRGB(25, 38, 125), Color3.fromRGB(7, 19, 67)}
+        },
+        RoyalBlue = {
+            Body = Color3.fromRGB(8, 9, 12),
+            Primary = Color3.fromRGB(5, 5, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(7, 33, 110)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(17, 42, 146)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(31, 51, 182)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(48, 61, 218)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(69, 72, 253))
+            },
+            TextColor = Color3.fromRGB(238, 242, 255),
+            SubTextColor = Color3.fromRGB(203, 216, 253),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(31, 47, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(2, 39, 165))
+            },
+            Accent = Color3.fromRGB(87, 105, 255),
+            AccentDark = Color3.fromRGB(33, 62, 204),
+            AccentLight = Color3.fromRGB(165, 173, 255),
+            HeaderBtn = Color3.fromRGB(60, 84, 251),
+            DisplayName = "Royal Blue",
+            PreviewColors = {Color3.fromRGB(31, 47, 255), Color3.fromRGB(33, 62, 204), Color3.fromRGB(7, 33, 110)}
+        },
+        BabyBlue = {
+            Body = Color3.fromRGB(13, 14, 15),
+            Primary = Color3.fromRGB(8, 9, 10),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(64, 97, 120)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(89, 125, 159)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(116, 153, 199)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(145, 181, 238)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(162, 192, 255))
+            },
+            TextColor = Color3.fromRGB(247, 251, 255),
+            SubTextColor = Color3.fromRGB(230, 244, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(143, 186, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(91, 141, 181))
+            },
+            Accent = Color3.fromRGB(171, 206, 255),
+            AccentDark = Color3.fromRGB(130, 175, 223),
+            AccentLight = Color3.fromRGB(210, 228, 255),
+            HeaderBtn = Color3.fromRGB(158, 200, 255),
+            DisplayName = "Baby Blue",
+            PreviewColors = {Color3.fromRGB(143, 186, 255), Color3.fromRGB(130, 175, 223), Color3.fromRGB(64, 97, 120)}
+        },
+        SteelBlue = {
+            Body = Color3.fromRGB(9, 10, 12),
+            Primary = Color3.fromRGB(6, 7, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(37, 65, 96)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(54, 84, 127)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(72, 102, 158)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(93, 121, 189)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(116, 140, 221))
+            },
+            TextColor = Color3.fromRGB(244, 249, 255),
+            SubTextColor = Color3.fromRGB(192, 205, 221),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(97, 135, 228)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(51, 92, 144))
+            },
+            Accent = Color3.fromRGB(135, 168, 237),
+            AccentDark = Color3.fromRGB(80, 118, 177),
+            AccentLight = Color3.fromRGB(184, 201, 240),
+            HeaderBtn = Color3.fromRGB(110, 146, 218),
+            DisplayName = "Steel Blue",
+            PreviewColors = {Color3.fromRGB(97, 135, 228), Color3.fromRGB(80, 118, 177), Color3.fromRGB(37, 65, 96)}
+        },
+        Periwinkle = {
+            Body = Color3.fromRGB(12, 12, 14),
+            Primary = Color3.fromRGB(7, 7, 9),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(57, 62, 116)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(80, 81, 154)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(109, 105, 192)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(144, 132, 230)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(173, 154, 255))
+            },
+            TextColor = Color3.fromRGB(246, 247, 255),
+            SubTextColor = Color3.fromRGB(227, 230, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(147, 133, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(80, 86, 174))
+            },
+            Accent = Color3.fromRGB(170, 163, 255),
+            AccentDark = Color3.fromRGB(118, 117, 215),
+            AccentLight = Color3.fromRGB(211, 206, 255),
+            HeaderBtn = Color3.fromRGB(156, 149, 255),
+            DisplayName = "Periwinkle",
+            PreviewColors = {Color3.fromRGB(147, 133, 255), Color3.fromRGB(118, 117, 215), Color3.fromRGB(57, 62, 116)}
+        },
+        Purpl = {
+            Body = Color3.fromRGB(11, 8, 12),
+            Primary = Color3.fromRGB(7, 5, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(75, 14, 102)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(108, 25, 135)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(145, 39, 168)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(183, 56, 201)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(224, 77, 235))
+            },
+            TextColor = Color3.fromRGB(250, 239, 255),
+            SubTextColor = Color3.fromRGB(222, 192, 235),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(218, 45, 242)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(114, 13, 153))
+            },
+            Accent = Color3.fromRGB(228, 98, 252),
+            AccentDark = Color3.fromRGB(157, 42, 189),
+            AccentLight = Color3.fromRGB(244, 172, 255),
+            HeaderBtn = Color3.fromRGB(204, 69, 232),
+            DisplayName = "Purple Classic",
+            PreviewColors = {Color3.fromRGB(218, 45, 242), Color3.fromRGB(157, 42, 189), Color3.fromRGB(75, 14, 102)}
+        },
+        BrightPurple = {
+            Body = Color3.fromRGB(11, 8, 12),
+            Primary = Color3.fromRGB(7, 5, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(87, 8, 116)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(125, 18, 154)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(165, 33, 192)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(209, 51, 230)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(243, 70, 255))
+            },
+            TextColor = Color3.fromRGB(251, 238, 255),
+            SubTextColor = Color3.fromRGB(242, 205, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(229, 31, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(132, 2, 174))
+            },
+            Accent = Color3.fromRGB(230, 87, 255),
+            AccentDark = Color3.fromRGB(180, 35, 215),
+            AccentLight = Color3.fromRGB(244, 165, 255),
+            HeaderBtn = Color3.fromRGB(225, 61, 255),
+            DisplayName = "Bright Purple",
+            PreviewColors = {Color3.fromRGB(229, 31, 255), Color3.fromRGB(180, 35, 215), Color3.fromRGB(87, 8, 116)}
+        },
+        DarkPurple = {
+            Body = Color3.fromRGB(8, 6, 9),
+            Primary = Color3.fromRGB(5, 4, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 9, 65)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(65, 16, 86)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(87, 25, 108)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(111, 36, 129)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(137, 49, 150))
+            },
+            TextColor = Color3.fromRGB(249, 239, 255),
+            SubTextColor = Color3.fromRGB(140, 123, 150),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(131, 29, 155)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(67, 8, 98))
+            },
+            Accent = Color3.fromRGB(139, 63, 162),
+            AccentDark = Color3.fromRGB(94, 27, 121),
+            AccentLight = Color3.fromRGB(152, 110, 163),
+            HeaderBtn = Color3.fromRGB(124, 44, 149),
+            DisplayName = "Dark Purple",
+            PreviewColors = {Color3.fromRGB(131, 29, 155), Color3.fromRGB(94, 27, 121), Color3.fromRGB(45, 9, 65)}
+        },
+        NeonPurple = {
+            Body = Color3.fromRGB(10, 7, 11),
+            Primary = Color3.fromRGB(7, 4, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(95, 0, 118)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(136, 8, 157)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(181, 21, 195)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(229, 39, 234)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 56, 248))
+            },
+            TextColor = Color3.fromRGB(251, 237, 255),
+            SubTextColor = Color3.fromRGB(244, 201, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(249, 14, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(146, 0, 177))
+            },
+            Accent = Color3.fromRGB(244, 74, 255),
+            AccentDark = Color3.fromRGB(196, 23, 219),
+            AccentLight = Color3.fromRGB(251, 159, 255),
+            HeaderBtn = Color3.fromRGB(240, 47, 255),
+            DisplayName = "Neon Purple",
+            PreviewColors = {Color3.fromRGB(249, 14, 255), Color3.fromRGB(196, 23, 219), Color3.fromRGB(95, 0, 118)}
+        },
+        Lilac = {
+            Body = Color3.fromRGB(14, 12, 14),
+            Primary = Color3.fromRGB(9, 8, 9),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(101, 66, 118)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(139, 91, 157)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(180, 119, 195)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(222, 148, 234)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(249, 167, 255))
+            },
+            TextColor = Color3.fromRGB(252, 247, 255),
+            SubTextColor = Color3.fromRGB(247, 231, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(241, 149, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(152, 94, 177))
+            },
+            Accent = Color3.fromRGB(241, 175, 255),
+            AccentDark = Color3.fromRGB(198, 132, 219),
+            AccentLight = Color3.fromRGB(249, 213, 255),
+            HeaderBtn = Color3.fromRGB(238, 164, 255),
+            DisplayName = "Lilac",
+            PreviewColors = {Color3.fromRGB(241, 149, 255), Color3.fromRGB(198, 132, 219), Color3.fromRGB(101, 66, 118)}
+        },
+        Eggplant = {
+            Body = Color3.fromRGB(8, 6, 9),
+            Primary = Color3.fromRGB(5, 4, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(53, 11, 59)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(74, 19, 78)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(96, 28, 98)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(117, 38, 114)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(136, 51, 128))
+            },
+            TextColor = Color3.fromRGB(253, 240, 255),
+            SubTextColor = Color3.fromRGB(133, 113, 136),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(141, 34, 136)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(80, 13, 89))
+            },
+            Accent = Color3.fromRGB(146, 63, 146),
+            AccentDark = Color3.fromRGB(105, 30, 109),
+            AccentLight = Color3.fromRGB(148, 103, 147),
+            HeaderBtn = Color3.fromRGB(134, 46, 135),
+            DisplayName = "Eggplant",
+            PreviewColors = {Color3.fromRGB(141, 34, 136), Color3.fromRGB(105, 30, 109), Color3.fromRGB(53, 11, 59)}
+        },
+        Pink = {
+            Body = Color3.fromRGB(13, 10, 11),
+            Primary = Color3.fromRGB(9, 6, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(110, 31, 64)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(146, 46, 82)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(182, 65, 100)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(218, 87, 118)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(253, 111, 137))
+            },
+            TextColor = Color3.fromRGB(255, 242, 247),
+            SubTextColor = Color3.fromRGB(253, 215, 231),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 82, 124)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(165, 39, 89))
+            },
+            Accent = Color3.fromRGB(255, 125, 161),
+            AccentDark = Color3.fromRGB(204, 72, 116),
+            AccentLight = Color3.fromRGB(255, 186, 203),
+            HeaderBtn = Color3.fromRGB(251, 104, 146),
+            DisplayName = "Pink",
+            PreviewColors = {Color3.fromRGB(255, 82, 124), Color3.fromRGB(204, 72, 116), Color3.fromRGB(110, 31, 64)}
+        },
+        HotPink = {
+            Body = Color3.fromRGB(12, 8, 10),
+            Primary = Color3.fromRGB(8, 5, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(114, 5, 60)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(151, 15, 77)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(188, 29, 93)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(226, 47, 109)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 67, 123))
+            },
+            TextColor = Color3.fromRGB(255, 238, 246),
+            SubTextColor = Color3.fromRGB(255, 204, 229),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 27, 106)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(171, 0, 82))
+            },
+            Accent = Color3.fromRGB(255, 84, 149),
+            AccentDark = Color3.fromRGB(211, 31, 109),
+            AccentLight = Color3.fromRGB(255, 164, 197),
+            HeaderBtn = Color3.fromRGB(255, 58, 135),
+            DisplayName = "Hot Pink",
+            PreviewColors = {Color3.fromRGB(255, 27, 106), Color3.fromRGB(211, 31, 109), Color3.fromRGB(114, 5, 60)}
+        },
+        BabyPink = {
+            Body = Color3.fromRGB(15, 13, 14),
+            Primary = Color3.fromRGB(10, 8, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 71, 84)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(159, 98, 109)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(199, 127, 135)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(238, 157, 161)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 176, 174))
+            },
+            TextColor = Color3.fromRGB(255, 248, 249),
+            SubTextColor = Color3.fromRGB(255, 233, 238),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 157, 162)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(181, 103, 120))
+            },
+            Accent = Color3.fromRGB(255, 182, 188),
+            AccentDark = Color3.fromRGB(223, 141, 154),
+            AccentLight = Color3.fromRGB(255, 216, 218),
+            HeaderBtn = Color3.fromRGB(255, 171, 179),
+            DisplayName = "Baby Pink",
+            PreviewColors = {Color3.fromRGB(255, 157, 162), Color3.fromRGB(223, 141, 154), Color3.fromRGB(120, 71, 84)}
+        },
+        DeepPink = {
+            Body = Color3.fromRGB(11, 7, 9),
+            Primary = Color3.fromRGB(7, 4, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(88, 6, 54)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(116, 14, 67)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(145, 25, 81)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(173, 38, 93)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(202, 55, 107))
+            },
+            TextColor = Color3.fromRGB(255, 238, 248),
+            SubTextColor = Color3.fromRGB(202, 162, 185),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(208, 25, 100)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(132, 1, 74))
+            },
+            Accent = Color3.fromRGB(217, 74, 137),
+            AccentDark = Color3.fromRGB(162, 27, 95),
+            AccentLight = Color3.fromRGB(219, 142, 175),
+            HeaderBtn = Color3.fromRGB(200, 48, 117),
+            DisplayName = "Deep Pink",
+            PreviewColors = {Color3.fromRGB(208, 25, 100), Color3.fromRGB(162, 27, 95), Color3.fromRGB(88, 6, 54)}
+        },
+        Watermelon = {
+            Body = Color3.fromRGB(13, 9, 10),
+            Primary = Color3.fromRGB(8, 5, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(108, 16, 35)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(143, 28, 43)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(178, 44, 50)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(214, 66, 62)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(249, 101, 85))
+            },
+            TextColor = Color3.fromRGB(255, 240, 243),
+            SubTextColor = Color3.fromRGB(249, 204, 213),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 56, 51)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(162, 16, 41))
+            },
+            Accent = Color3.fromRGB(255, 102, 105),
+            AccentDark = Color3.fromRGB(200, 48, 62),
+            AccentLight = Color3.fromRGB(255, 174, 173),
+            HeaderBtn = Color3.fromRGB(246, 76, 82),
+            DisplayName = "Watermelon",
+            PreviewColors = {Color3.fromRGB(255, 56, 51), Color3.fromRGB(200, 48, 62), Color3.fromRGB(108, 16, 35)}
+        },
+        Brown = {
+            Body = Color3.fromRGB(9, 8, 7),
+            Primary = Color3.fromRGB(6, 5, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(63, 33, 15)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(84, 48, 23)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(104, 67, 33)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(125, 86, 45)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(145, 108, 59))
+            },
+            TextColor = Color3.fromRGB(255, 246, 241),
+            SubTextColor = Color3.fromRGB(145, 131, 122),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(150, 98, 42)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(95, 48, 18))
+            },
+            Accent = Color3.fromRGB(157, 113, 72),
+            AccentDark = Color3.fromRGB(117, 72, 37),
+            AccentLight = Color3.fromRGB(158, 136, 113),
+            HeaderBtn = Color3.fromRGB(144, 97, 55),
+            DisplayName = "Brown",
+            PreviewColors = {Color3.fromRGB(150, 98, 42), Color3.fromRGB(117, 72, 37), Color3.fromRGB(63, 33, 15)}
+        },
+        DarkBrown = {
+            Body = Color3.fromRGB(8, 6, 6),
+            Primary = Color3.fromRGB(5, 4, 3),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(47, 21, 10)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(62, 32, 16)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(77, 45, 24)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(93, 59, 32)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(108, 75, 42))
+            },
+            TextColor = Color3.fromRGB(255, 245, 241),
+            SubTextColor = Color3.fromRGB(108, 95, 90),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(111, 66, 29)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(70, 31, 12))
+            },
+            Accent = Color3.fromRGB(116, 79, 52),
+            AccentDark = Color3.fromRGB(87, 49, 26),
+            AccentLight = Color3.fromRGB(117, 98, 83),
+            HeaderBtn = Color3.fromRGB(107, 67, 39),
+            DisplayName = "Dark Brown",
+            PreviewColors = {Color3.fromRGB(111, 66, 29), Color3.fromRGB(87, 49, 26), Color3.fromRGB(47, 21, 10)}
+        },
+        Tan = {
+            Body = Color3.fromRGB(13, 12, 11),
+            Primary = Color3.fromRGB(9, 8, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(104, 83, 60)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(138, 115, 83)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(172, 149, 107)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(205, 184, 133)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(239, 221, 160))
+            },
+            TextColor = Color3.fromRGB(255, 251, 247),
+            SubTextColor = Color3.fromRGB(239, 229, 218),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(247, 218, 148)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(156, 125, 86))
+            },
+            Accent = Color3.fromRGB(255, 230, 178),
+            AccentDark = Color3.fromRGB(192, 164, 119),
+            AccentLight = Color3.fromRGB(255, 243, 214),
+            HeaderBtn = Color3.fromRGB(237, 209, 155),
+            DisplayName = "Tan",
+            PreviewColors = {Color3.fromRGB(247, 218, 148), Color3.fromRGB(192, 164, 119), Color3.fromRGB(104, 83, 60)}
+        },
+        Mocha = {
+            Body = Color3.fromRGB(10, 9, 8),
+            Primary = Color3.fromRGB(7, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(67, 47, 32)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(89, 67, 45)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(111, 88, 59)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(133, 110, 75)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(155, 134, 91))
+            },
+            TextColor = Color3.fromRGB(255, 250, 246),
+            SubTextColor = Color3.fromRGB(155, 145, 138),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 129, 81)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(101, 70, 45))
+            },
+            Accent = Color3.fromRGB(167, 140, 105),
+            AccentDark = Color3.fromRGB(125, 96, 66),
+            AccentLight = Color3.fromRGB(168, 155, 135),
+            HeaderBtn = Color3.fromRGB(153, 124, 88),
+            DisplayName = "Mocha",
+            PreviewColors = {Color3.fromRGB(160, 129, 81), Color3.fromRGB(125, 96, 66), Color3.fromRGB(67, 47, 32)}
+        },
+        Walnut = {
+            Body = Color3.fromRGB(8, 7, 6),
+            Primary = Color3.fromRGB(6, 5, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(55, 31, 19)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(73, 45, 27)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(91, 61, 37)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(109, 79, 49)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(127, 98, 61))
+            },
+            TextColor = Color3.fromRGB(255, 247, 243),
+            SubTextColor = Color3.fromRGB(127, 115, 109),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(131, 91, 49)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(83, 45, 25))
+            },
+            Accent = Color3.fromRGB(136, 103, 73),
+            AccentDark = Color3.fromRGB(102, 67, 41),
+            AccentLight = Color3.fromRGB(138, 120, 103),
+            HeaderBtn = Color3.fromRGB(125, 89, 58),
+            DisplayName = "Walnut",
+            PreviewColors = {Color3.fromRGB(131, 91, 49), Color3.fromRGB(102, 67, 41), Color3.fromRGB(55, 31, 19)}
+        },
+        Gray = {
+            Body = Color3.fromRGB(12, 12, 13),
+            Primary = Color3.fromRGB(8, 8, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(77, 81, 88)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(103, 107, 116)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(129, 133, 145)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(156, 160, 173)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(183, 186, 202))
+            },
+            TextColor = Color3.fromRGB(253, 254, 255),
+            SubTextColor = Color3.fromRGB(197, 198, 202),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(185, 190, 208)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(115, 120, 132))
+            },
+            Accent = Color3.fromRGB(199, 203, 217),
+            AccentDark = Color3.fromRGB(145, 150, 162),
+            AccentLight = Color3.fromRGB(209, 212, 219),
+            HeaderBtn = Color3.fromRGB(180, 185, 200),
+            DisplayName = "Gray",
+            PreviewColors = {Color3.fromRGB(185, 190, 208), Color3.fromRGB(145, 150, 162), Color3.fromRGB(77, 81, 88)}
+        },
+        LightGray = {
+            Body = Color3.fromRGB(17, 17, 18),
+            Primary = Color3.fromRGB(11, 11, 12),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(103, 106, 112)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(137, 140, 149)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(171, 175, 185)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(206, 209, 222)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(238, 241, 255))
+            },
+            TextColor = Color3.fromRGB(253, 254, 255),
+            SubTextColor = Color3.fromRGB(250, 252, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(235, 239, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(153, 158, 168))
+            },
+            Accent = Color3.fromRGB(240, 243, 255),
+            AccentDark = Color3.fromRGB(192, 196, 208),
+            AccentLight = Color3.fromRGB(247, 249, 255),
+            HeaderBtn = Color3.fromRGB(237, 242, 255),
+            DisplayName = "Light Gray",
+            PreviewColors = {Color3.fromRGB(235, 239, 255), Color3.fromRGB(192, 196, 208), Color3.fromRGB(103, 106, 112)}
+        },
+        DarkGray = {
+            Body = Color3.fromRGB(8, 8, 9),
+            Primary = Color3.fromRGB(5, 5, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(46, 48, 53)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(61, 64, 70)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(77, 80, 88)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(93, 95, 105)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(109, 111, 122))
+            },
+            TextColor = Color3.fromRGB(253, 253, 255),
+            SubTextColor = Color3.fromRGB(118, 120, 122),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(110, 113, 126)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(68, 72, 80))
+            },
+            Accent = Color3.fromRGB(119, 122, 131),
+            AccentDark = Color3.fromRGB(86, 89, 98),
+            AccentLight = Color3.fromRGB(126, 127, 133),
+            HeaderBtn = Color3.fromRGB(107, 111, 121),
+            DisplayName = "Dark Gray",
+            PreviewColors = {Color3.fromRGB(110, 113, 126), Color3.fromRGB(86, 89, 98), Color3.fromRGB(46, 48, 53)}
+        },
+        Slate = {
+            Body = Color3.fromRGB(10, 10, 11),
+            Primary = Color3.fromRGB(6, 7, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(58, 66, 78)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(78, 87, 103)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(99, 108, 128)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(121, 128, 153)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(143, 149, 178))
+            },
+            TextColor = Color3.fromRGB(250, 252, 255),
+            SubTextColor = Color3.fromRGB(169, 173, 178),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(140, 151, 184)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(85, 97, 116))
+            },
+            Accent = Color3.fromRGB(157, 167, 192),
+            AccentDark = Color3.fromRGB(111, 122, 143),
+            AccentLight = Color3.fromRGB(175, 180, 194),
+            HeaderBtn = Color3.fromRGB(140, 150, 176),
+            DisplayName = "Slate",
+            PreviewColors = {Color3.fromRGB(140, 151, 184), Color3.fromRGB(111, 122, 143), Color3.fromRGB(58, 66, 78)}
+        },
+        Charcoal = {
+            Body = Color3.fromRGB(7, 7, 7),
+            Primary = Color3.fromRGB(4, 4, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(36, 41, 45)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(49, 54, 59)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(62, 67, 74)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(75, 80, 89)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(88, 93, 103))
+            },
+            TextColor = Color3.fromRGB(252, 253, 255),
+            SubTextColor = Color3.fromRGB(99, 101, 103),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(88, 94, 107)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(54, 60, 67))
+            },
+            Accent = Color3.fromRGB(96, 102, 111),
+            AccentDark = Color3.fromRGB(69, 75, 83),
+            AccentLight = Color3.fromRGB(104, 107, 112),
+            HeaderBtn = Color3.fromRGB(87, 93, 102),
+            DisplayName = "Charcoal",
+            PreviewColors = {Color3.fromRGB(88, 94, 107), Color3.fromRGB(69, 75, 83), Color3.fromRGB(36, 41, 45)}
+        },
+        White = {
+            Body = Color3.fromRGB(23, 23, 23),
+            Primary = Color3.fromRGB(15, 15, 15),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(119, 123, 124)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(158, 162, 165)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(198, 202, 205)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(237, 242, 246)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(247, 251, 255))
+            },
+            TextColor = Color3.fromRGB(254, 255, 255),
+            SubTextColor = Color3.fromRGB(253, 254, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(245, 250, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(178, 184, 187))
+            },
+            Accent = Color3.fromRGB(247, 252, 255),
+            AccentDark = Color3.fromRGB(221, 227, 230),
+            AccentLight = Color3.fromRGB(251, 253, 255),
+            HeaderBtn = Color3.fromRGB(246, 251, 255),
+            DisplayName = "White",
+            PreviewColors = {Color3.fromRGB(245, 250, 255), Color3.fromRGB(221, 227, 230), Color3.fromRGB(119, 123, 124)}
+        },
+        Snow = {
+            Body = Color3.fromRGB(21, 21, 21),
+            Primary = Color3.fromRGB(14, 14, 14),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(113, 118, 122)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(150, 157, 162)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(188, 195, 202)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(226, 233, 242)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(240, 246, 255))
+            },
+            TextColor = Color3.fromRGB(254, 254, 255),
+            SubTextColor = Color3.fromRGB(251, 253, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(237, 245, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(169, 177, 184))
+            },
+            Accent = Color3.fromRGB(241, 248, 255),
+            AccentDark = Color3.fromRGB(211, 219, 226),
+            AccentLight = Color3.fromRGB(248, 251, 255),
+            HeaderBtn = Color3.fromRGB(239, 247, 255),
+            DisplayName = "Snow",
+            PreviewColors = {Color3.fromRGB(237, 245, 255), Color3.fromRGB(211, 219, 226), Color3.fromRGB(113, 118, 122)}
+        },
+        Ivory = {
+            Body = Color3.fromRGB(21, 21, 21),
+            Primary = Color3.fromRGB(14, 14, 14),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(122, 119, 108)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(162, 159, 144)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(202, 199, 181)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(242, 239, 218)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 254, 231))
+            },
+            TextColor = Color3.fromRGB(255, 254, 253),
+            SubTextColor = Color3.fromRGB(255, 253, 249),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 252, 226)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(184, 178, 160))
+            },
+            Accent = Color3.fromRGB(255, 252, 234),
+            AccentDark = Color3.fromRGB(226, 222, 202),
+            AccentLight = Color3.fromRGB(255, 254, 244),
+            HeaderBtn = Color3.fromRGB(255, 252, 230),
+            DisplayName = "Ivory",
+            PreviewColors = {Color3.fromRGB(255, 252, 226), Color3.fromRGB(226, 222, 202), Color3.fromRGB(122, 119, 108)}
+        },
+        Black = {
+            Body = Color3.fromRGB(5, 5, 5),
+            Primary = Color3.fromRGB(3, 3, 3),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 26, 31)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(34, 35, 41)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(43, 44, 50)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(52, 52, 60)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(61, 61, 70))
+            },
+            TextColor = Color3.fromRGB(252, 252, 255),
+            SubTextColor = Color3.fromRGB(68, 68, 70),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(61, 62, 73)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(38, 39, 46))
+            },
+            Accent = Color3.fromRGB(67, 67, 76),
+            AccentDark = Color3.fromRGB(48, 49, 57),
+            AccentLight = Color3.fromRGB(72, 72, 76),
+            HeaderBtn = Color3.fromRGB(60, 61, 70),
+            DisplayName = "Black",
+            PreviewColors = {Color3.fromRGB(61, 62, 73), Color3.fromRGB(48, 49, 57), Color3.fromRGB(25, 26, 31)}
+        },
+        Graphite = {
+            Body = Color3.fromRGB(6, 6, 7),
+            Primary = Color3.fromRGB(4, 4, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(32, 34, 41)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(43, 45, 54)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(54, 56, 67)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(66, 67, 81)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(78, 79, 94))
+            },
+            TextColor = Color3.fromRGB(251, 252, 255),
+            SubTextColor = Color3.fromRGB(89, 91, 94),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(77, 79, 97)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(47, 50, 61))
+            },
+            Accent = Color3.fromRGB(85, 87, 101),
+            AccentDark = Color3.fromRGB(61, 63, 75),
+            AccentLight = Color3.fromRGB(94, 94, 102),
+            HeaderBtn = Color3.fromRGB(76, 78, 93),
+            DisplayName = "Graphite",
+            PreviewColors = {Color3.fromRGB(77, 79, 97), Color3.fromRGB(61, 63, 75), Color3.fromRGB(32, 34, 41)}
+        },
+        Turq = {
+            Body = Color3.fromRGB(11, 14, 13),
+            Primary = Color3.fromRGB(7, 9, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 112, 103)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(65, 149, 143)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(87, 185, 185)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(112, 214, 222)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(137, 239, 255))
+            },
+            TextColor = Color3.fromRGB(244, 255, 254),
+            SubTextColor = Color3.fromRGB(223, 255, 251),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(112, 245, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(62, 168, 157))
+            },
+            Accent = Color3.fromRGB(148, 252, 255),
+            AccentDark = Color3.fromRGB(97, 208, 203),
+            AccentLight = Color3.fromRGB(198, 252, 255),
+            HeaderBtn = Color3.fromRGB(132, 253, 255),
+            DisplayName = "Turquoise Soft",
+            PreviewColors = {Color3.fromRGB(112, 245, 255), Color3.fromRGB(97, 208, 203), Color3.fromRGB(45, 112, 103)}
+        },
+        Sea = {
+            Body = Color3.fromRGB(9, 12, 12),
+            Primary = Color3.fromRGB(5, 7, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 87, 100)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(39, 110, 132)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(55, 130, 165)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(75, 149, 197)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(96, 168, 230))
+            },
+            TextColor = Color3.fromRGB(242, 253, 255),
+            SubTextColor = Color3.fromRGB(193, 224, 230),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(70, 172, 237)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(31, 127, 150))
+            },
+            Accent = Color3.fromRGB(117, 202, 247),
+            AccentDark = Color3.fromRGB(61, 151, 185),
+            AccentLight = Color3.fromRGB(180, 223, 250),
+            HeaderBtn = Color3.fromRGB(89, 182, 227),
+            DisplayName = "Sea",
+            PreviewColors = {Color3.fromRGB(70, 172, 237), Color3.fromRGB(61, 151, 185), Color3.fromRGB(25, 87, 100)}
+        },
+        Marine = {
+            Body = Color3.fromRGB(8, 10, 11),
+            Primary = Color3.fromRGB(5, 6, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(14, 71, 92)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(24, 89, 122)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(37, 106, 151)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(53, 121, 181)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(72, 137, 211))
+            },
+            TextColor = Color3.fromRGB(240, 251, 255),
+            SubTextColor = Color3.fromRGB(173, 201, 211),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(44, 137, 218)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(14, 101, 138))
+            },
+            Accent = Color3.fromRGB(91, 169, 227),
+            AccentDark = Color3.fromRGB(41, 123, 170),
+            AccentLight = Color3.fromRGB(156, 196, 230),
+            HeaderBtn = Color3.fromRGB(65, 149, 209),
+            DisplayName = "Marine",
+            PreviewColors = {Color3.fromRGB(44, 137, 218), Color3.fromRGB(41, 123, 170), Color3.fromRGB(14, 71, 92)}
+        },
+        Emeral = {
+            Body = Color3.fromRGB(8, 12, 10),
+            Primary = Color3.fromRGB(5, 8, 6),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(9, 114, 65)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(20, 151, 98)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(35, 188, 135)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(53, 226, 175)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(73, 255, 213))
+            },
+            TextColor = Color3.fromRGB(238, 255, 247),
+            SubTextColor = Color3.fromRGB(205, 255, 232),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(35, 255, 191)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(5, 171, 98))
+            },
+            Accent = Color3.fromRGB(90, 255, 201),
+            AccentDark = Color3.fromRGB(38, 211, 145),
+            AccentLight = Color3.fromRGB(167, 255, 228),
+            HeaderBtn = Color3.fromRGB(65, 255, 191),
+            DisplayName = "Emerald Bright",
+            PreviewColors = {Color3.fromRGB(35, 255, 191), Color3.fromRGB(38, 211, 145), Color3.fromRGB(9, 114, 65)}
+        },
+        Chartreuse = {
+            Body = Color3.fromRGB(12, 13, 9),
+            Primary = Color3.fromRGB(8, 8, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(96, 116, 13)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(121, 154, 24)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(144, 192, 40)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(166, 230, 59)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(178, 255, 78))
+            },
+            TextColor = Color3.fromRGB(252, 255, 239),
+            SubTextColor = Color3.fromRGB(245, 255, 207),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(175, 255, 41)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(138, 174, 10))
+            },
+            Accent = Color3.fromRGB(200, 255, 94),
+            AccentDark = Color3.fromRGB(167, 215, 43),
+            AccentLight = Color3.fromRGB(224, 255, 169),
+            HeaderBtn = Color3.fromRGB(194, 255, 70),
+            DisplayName = "Chartreuse",
+            PreviewColors = {Color3.fromRGB(175, 255, 41), Color3.fromRGB(167, 215, 43), Color3.fromRGB(96, 116, 13)}
+        },
+        Vermilion = {
+            Body = Color3.fromRGB(12, 9, 8),
+            Primary = Color3.fromRGB(8, 5, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 27, 7)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(141, 47, 16)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(175, 73, 30)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(210, 104, 46)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(244, 138, 67))
+            },
+            TextColor = Color3.fromRGB(255, 242, 238),
+            SubTextColor = Color3.fromRGB(244, 205, 196),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(252, 108, 30)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(159, 36, 2))
+            },
+            Accent = Color3.fromRGB(255, 141, 87),
+            AccentDark = Color3.fromRGB(196, 76, 32),
+            AccentLight = Color3.fromRGB(255, 196, 165),
+            HeaderBtn = Color3.fromRGB(241, 115, 58),
+            DisplayName = "Vermilion",
+            PreviewColors = {Color3.fromRGB(252, 108, 30), Color3.fromRGB(196, 76, 32), Color3.fromRGB(106, 27, 7)}
+        },
+        Burgundy = {
+            Body = Color3.fromRGB(9, 6, 7),
+            Primary = Color3.fromRGB(6, 4, 4),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(57, 9, 22)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(76, 15, 28)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(94, 23, 34)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(113, 33, 40)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(131, 45, 48))
+            },
+            TextColor = Color3.fromRGB(255, 240, 244),
+            SubTextColor = Color3.fromRGB(131, 108, 114),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(136, 27, 37)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(86, 9, 27))
+            },
+            Accent = Color3.fromRGB(141, 57, 67),
+            AccentDark = Color3.fromRGB(106, 25, 40),
+            AccentLight = Color3.fromRGB(143, 97, 102),
+            HeaderBtn = Color3.fromRGB(130, 40, 53),
+            DisplayName = "Burgundy",
+            PreviewColors = {Color3.fromRGB(136, 27, 37), Color3.fromRGB(106, 25, 40), Color3.fromRGB(57, 9, 22)}
+        },
+        Sepia = {
+            Body = Color3.fromRGB(10, 9, 8),
+            Primary = Color3.fromRGB(7, 6, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(71, 56, 35)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(95, 78, 49)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(118, 101, 64)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(141, 126, 81)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(164, 151, 99))
+            },
+            TextColor = Color3.fromRGB(255, 251, 246),
+            SubTextColor = Color3.fromRGB(164, 157, 146),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(170, 149, 88)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(107, 83, 49))
+            },
+            Accent = Color3.fromRGB(177, 158, 113),
+            AccentDark = Color3.fromRGB(132, 111, 72),
+            AccentLight = Color3.fromRGB(178, 169, 144),
+            HeaderBtn = Color3.fromRGB(162, 142, 95),
+            DisplayName = "Sepia",
+            PreviewColors = {Color3.fromRGB(170, 149, 88), Color3.fromRGB(132, 111, 72), Color3.fromRGB(71, 56, 35)}
+        },
+        Khaki = {
+            Body = Color3.fromRGB(13, 12, 11),
+            Primary = Color3.fromRGB(8, 8, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(96, 90, 60)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(127, 122, 82)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(158, 156, 106)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(189, 189, 130)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(216, 221, 156))
+            },
+            TextColor = Color3.fromRGB(255, 254, 248),
+            SubTextColor = Color3.fromRGB(221, 218, 203),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(227, 228, 148)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(144, 136, 87))
+            },
+            Accent = Color3.fromRGB(237, 236, 175),
+            AccentDark = Color3.fromRGB(177, 172, 118),
+            AccentLight = Color3.fromRGB(240, 240, 206),
+            HeaderBtn = Color3.fromRGB(218, 216, 152),
+            DisplayName = "Khaki",
+            PreviewColors = {Color3.fromRGB(227, 228, 148), Color3.fromRGB(177, 172, 118), Color3.fromRGB(96, 90, 60)}
+        },
+        Beige = {
+            Body = Color3.fromRGB(16, 16, 15),
+            Primary = Color3.fromRGB(11, 10, 10),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(114, 103, 83)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(151, 139, 112)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(188, 177, 143)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(226, 216, 175)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 248, 201))
+            },
+            TextColor = Color3.fromRGB(255, 253, 250),
+            SubTextColor = Color3.fromRGB(255, 250, 240),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 242, 190)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(171, 154, 122))
+            },
+            Accent = Color3.fromRGB(255, 244, 206),
+            AccentDark = Color3.fromRGB(211, 197, 160),
+            AccentLight = Color3.fromRGB(255, 250, 229),
+            HeaderBtn = Color3.fromRGB(255, 242, 199),
+            DisplayName = "Beige",
+            PreviewColors = {Color3.fromRGB(255, 242, 190), Color3.fromRGB(211, 197, 160), Color3.fromRGB(114, 103, 83)}
+        },
+        Cream = {
+            Body = Color3.fromRGB(19, 19, 18),
+            Primary = Color3.fromRGB(13, 12, 12),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 114, 96)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(159, 153, 129)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(199, 193, 163)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(238, 233, 197)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 252, 215))
+            },
+            TextColor = Color3.fromRGB(255, 254, 251),
+            SubTextColor = Color3.fromRGB(255, 252, 244),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 249, 206)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(181, 171, 142))
+            },
+            Accent = Color3.fromRGB(255, 250, 218),
+            AccentDark = Color3.fromRGB(223, 215, 182),
+            AccentLight = Color3.fromRGB(255, 253, 235),
+            HeaderBtn = Color3.fromRGB(255, 248, 213),
+            DisplayName = "Cream",
+            PreviewColors = {Color3.fromRGB(255, 249, 206), Color3.fromRGB(223, 215, 182), Color3.fromRGB(120, 114, 96)}
+        },
+        Pearl = {
+            Body = Color3.fromRGB(20, 20, 20),
+            Primary = Color3.fromRGB(13, 13, 13),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(116, 108, 120)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(155, 144, 159)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(194, 181, 199)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(234, 218, 238)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(252, 235, 255))
+            },
+            TextColor = Color3.fromRGB(254, 253, 255),
+            SubTextColor = Color3.fromRGB(253, 249, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(251, 231, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(174, 161, 181))
+            },
+            Accent = Color3.fromRGB(251, 237, 255),
+            AccentDark = Color3.fromRGB(217, 202, 223),
+            AccentLight = Color3.fromRGB(253, 245, 255),
+            HeaderBtn = Color3.fromRGB(250, 234, 255),
+            DisplayName = "Pearl",
+            PreviewColors = {Color3.fromRGB(251, 231, 255), Color3.fromRGB(217, 202, 223), Color3.fromRGB(116, 108, 120)}
+        },
+        Platinum = {
+            Body = Color3.fromRGB(18, 19, 19),
+            Primary = Color3.fromRGB(12, 12, 12),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 114, 116)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(142, 150, 154)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(177, 187, 192)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(213, 223, 230)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(238, 247, 255))
+            },
+            TextColor = Color3.fromRGB(253, 255, 255),
+            SubTextColor = Color3.fromRGB(250, 254, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(235, 247, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(159, 170, 174))
+            },
+            Accent = Color3.fromRGB(240, 249, 255),
+            AccentDark = Color3.fromRGB(199, 210, 215),
+            AccentLight = Color3.fromRGB(247, 252, 255),
+            HeaderBtn = Color3.fromRGB(237, 249, 255),
+            DisplayName = "Platinum",
+            PreviewColors = {Color3.fromRGB(235, 247, 255), Color3.fromRGB(199, 210, 215), Color3.fromRGB(106, 114, 116)}
+        },
+        Titanium = {
+            Body = Color3.fromRGB(11, 12, 12),
+            Primary = Color3.fromRGB(7, 7, 8),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(71, 81, 90)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(96, 107, 119)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(121, 132, 148)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(147, 158, 177)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(174, 184, 206))
+            },
+            TextColor = Color3.fromRGB(251, 253, 255),
+            SubTextColor = Color3.fromRGB(198, 202, 206),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(172, 187, 213)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(106, 120, 135))
+            },
+            Accent = Color3.fromRGB(190, 203, 222),
+            AccentDark = Color3.fromRGB(136, 149, 166),
+            AccentLight = Color3.fromRGB(207, 214, 224),
+            HeaderBtn = Color3.fromRGB(170, 184, 204),
+            DisplayName = "Titanium",
+            PreviewColors = {Color3.fromRGB(172, 187, 213), Color3.fromRGB(136, 149, 166), Color3.fromRGB(71, 81, 90)}
+        },
+        Rainbow = {
+            Body = Color3.fromRGB(13, 9, 9),
+            Primary = Color3.fromRGB(8, 5, 5),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(107, 16, 16)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(99, 142, 28)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(43, 177, 143)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(81, 62, 212)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(246, 84, 165))
+            },
+            TextColor = Color3.fromRGB(255, 240, 240),
+            SubTextColor = Color3.fromRGB(246, 202, 202),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(76, 51, 254)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(161, 96, 16))
+            },
+            Accent = Color3.fromRGB(102, 209, 255),
+            AccentDark = Color3.fromRGB(59, 198, 48),
+            AccentLight = Color3.fromRGB(173, 186, 255),
+            HeaderBtn = Color3.fromRGB(76, 239, 244),
+            DisplayName = "Rainbow",
+            PreviewColors = {Color3.fromRGB(76, 51, 254), Color3.fromRGB(59, 198, 48), Color3.fromRGB(107, 16, 16)}
+        },
+        Pastel = {
+            Body = Color3.fromRGB(16, 14, 16),
+            Primary = Color3.fromRGB(10, 9, 10),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(118, 76, 118)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(157, 104, 104)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(195, 195, 133)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(164, 234, 164)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(184, 255, 255))
+            },
+            TextColor = Color3.fromRGB(255, 249, 255),
+            SubTextColor = Color3.fromRGB(255, 236, 255),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(169, 255, 169)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(177, 110, 151))
+            },
+            Accent = Color3.fromRGB(229, 255, 191),
+            AccentDark = Color3.fromRGB(219, 177, 149),
+            AccentLight = Color3.fromRGB(228, 255, 221),
+            HeaderBtn = Color3.fromRGB(240, 255, 181),
+            DisplayName = "Pastel",
+            PreviewColors = {Color3.fromRGB(169, 255, 169), Color3.fromRGB(219, 177, 149), Color3.fromRGB(118, 76, 118)}
+        },
+        Monochrome = {
+            Body = Color3.fromRGB(10, 10, 10),
+            Primary = Color3.fromRGB(7, 7, 7),
+            Lit = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(82, 82, 82)),
+                ColorSequenceKeypoint.new(0.25, Color3.fromRGB(108, 108, 108)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(135, 135, 135)),
+                ColorSequenceKeypoint.new(0.75, Color3.fromRGB(161, 161, 161)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(188, 188, 188))
+            },
+            TextColor = Color3.fromRGB(255, 255, 255),
+            SubTextColor = Color3.fromRGB(188, 188, 188),
+            ButtonGradient = ColorSequence.new{
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(194, 194, 194)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(122, 122, 122))
+            },
+            Accent = Color3.fromRGB(202, 202, 202),
+            AccentDark = Color3.fromRGB(151, 151, 151),
+            AccentLight = Color3.fromRGB(204, 204, 204),
+            HeaderBtn = Color3.fromRGB(186, 186, 186),
+            DisplayName = "Monochrome",
+            PreviewColors = {Color3.fromRGB(194, 194, 194), Color3.fromRGB(151, 151, 151), Color3.fromRGB(82, 82, 82)}
         },
         Amethyst = {
             Body = Color3.fromRGB(10, 8, 11),
